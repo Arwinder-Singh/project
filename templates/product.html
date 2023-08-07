@@ -1,0 +1,41 @@
+{% extends "base.html "%} {% load static %} {% block content %}
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <br> {% for product in productList%}
+        
+        {% comment %} <input type="checkbox" class="btn-check" id="btn-check-outlined" id="{{product.productName}}" name="{{product.productName}}" value="{{product.productName}}" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btn-check-outlined">{{product.productName}}</label><br> {% endcomment %}
+
+
+         <input type="checkbox" id="{{product.productName}}" name="{{product.productName}}" value="{{product.productName}}">
+        <label for="{{product.productName}}">{{product.productName}}</label><br>
+         {% endfor %}
+
+        <input type="submit">
+    </form>
+
+
+
+
+{% comment %} <script>
+    var products = [];
+
+
+    document.getElementById("demo").innerHTML = products;
+
+    function add() {
+        var product = document.getElementById("product").value;
+        products.push(product);
+        document.getElementById("demo").innerHTML = products;
+    }
+
+    function remove() {
+
+        products.pop();
+        document.getElementById("demo").innerHTML = products;
+    }
+</script>
+
+</html> {% endcomment %}
+{% endblock %}

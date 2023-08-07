@@ -1,0 +1,551 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #ff7f50 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: transform 0.3s, font-weight 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+
+/* About Section */
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-section .card {
+    background-color: #ffe8db;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.about-section .card-body {
+    padding: 20px;
+}
+
+.about-section .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff7f50;
+}
+
+.about-section .card-text {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.about-section .custom-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff7f50;
+    color: #ffffff;
+    border-color: #ff7f50;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.about-section .custom-btn:hover {
+    background-color: #ffffff;
+    color: #ff7f50;
+    border-color: #ffffff;
+}
+
+.about-section .custom-btn:active {
+    transform: scale(0.9);
+}
+
+
+/* Dashboard Section */
+
+.dashboard-section {
+    padding: 80px 0;
+}
+
+.dashboard-section .card {
+    background-color: #ffe8db;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section .card-body {
+    padding: 20px;
+}
+
+.dashboard-section .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff7f50;
+}
+
+.dashboard-section .card-text {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.dashboard-section .btn-primary {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff7f50 !important;
+    border-color: #ff7f50 !important;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.dashboard-section .btn-primary:hover {
+    background-color: #ffffff !important;
+    color: #ff7f50 !important;
+    border-color: #ffffff !important;
+    transform: scale(1.1);
+}
+
+.dashboard-section .btn-primary::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.dashboard-section .btn-primary:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff7f50;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Products Section */
+
+.products-section {
+    padding: 40px 0;
+}
+
+.products-section .section-heading {
+    text-align: center;
+    margin-top: 40px;
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+.products-section .card {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.products-section .card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.products-section .card-body {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.products-section .card-title {
+    font-size: 18px;
+    color: #ff7f50;
+}
+
+.products-section .card-text {
+    font-size: 14px;
+}
+
+.products-section .btn-primary {
+    width: 100%;
+    background-color: #ff7f50;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.products-section .btn-primary:hover {
+    background-color: #ffffff;
+    color: #ff7f50;
+    border-color: #ffffff;
+}
+
+
+/* Login Section */
+
+#login {
+    padding: 80px 0;
+}
+
+.card {
+    background-color: #ffe8db;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+
+
+/* Dashboard Section */
+
+#dashboard {
+    padding: 80px 0;
+}
+
+.card {
+    background-color: #ffe8db;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#barGraph {
+    height: 300px;
+}
+
+
+/* Additional Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mb-4 {
+    margin-bottom: 30px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.py-3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.custom-section .card-body .btn-primary:hover,
+.custom-section .card-body .btn-primary:focus {
+    background-color: #ffffff !important;
+    color: #ff7f50 !important;
+    border-color: #ffffff !important;
+}
+
+.custom-section .card-body .btn-primary:not(:disabled):not(.disabled):active,
+.custom-section .card-body .btn-primary:not(:disabled):not(.disabled).active {
+    background-color: #ff7f50 !important;
+    color: #ffffff;
+    border-color: #ff7f50 !important;
+    border-radius: 8px;
+}
+
+.custom-title {
+    color: #ff7f50;
+}
+
+::placeholder {
+    color: gray !important;
+}
+
+
+/* Add responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        margin-top: 10px;
+    }
+    .welcome-section h1 {
+        font-size: 28px;
+    }
+    .about-section .col-md-6 {
+        text-align: center;
+    }
+    .about-section .col-md-6 img {
+        margin-top: 20px;
+    }
+    .dashboard-section .col-md-6 img {
+        margin-top: 20px;
+    }
+    .dashboard-section .col-md-6,
+    .dashboard-section .col-md-6 .card {
+        text-align: center;
+    }
+}
+
+
+/* Add responsive styles for extra small screens */
+
+@media (max-width: 575px) {
+    .welcome-section h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* Add responsive styles for login page */
+
+#login .card {
+    margin-top: 20px;
+}
+
+#login .card-title {
+    margin-bottom: 20px;
+}
+
+
+/* Add responsive styles for products page */
+
+.products-section .section-heading {
+    margin-bottom: 20px;
+}
+
+
+/* Add responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-brand {
+        margin-right: 10px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+    .welcome-section {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .welcome-section h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .about-section .card {
+        margin-bottom: 20px;
+    }
+    .about-section .card-title {
+        font-size: 20px;
+    }
+    .about-section .custom-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .dashboard-section .card-title {
+        font-size: 20px;
+    }
+    .dashboard-section .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .footer-links {
+        margin-top: 5px;
+    }
+    .products-section .section-heading {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .products-section .card {
+        margin-bottom: 20px;
+    }
+    .products-section .card-title {
+        font-size: 20px;
+    }
+    .products-section .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Add responsive styles for extra small screens */
+
+@media (max-width: 575px) {
+    .navbar-brand {
+        margin-right: 5px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 5px;
+    }
+    .welcome-section {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .welcome-section h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .about-section .card-title {
+        font-size: 18px;
+    }
+    .about-section .custom-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .dashboard-section .card-title {
+        font-size: 18px;
+    }
+    .dashboard-section .btn-primary {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .products-section .section-heading {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .products-section .card-title {
+        font-size: 18px;
+    }
+    .products-section .btn-primary {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .tables {
+        flex-direction: column;
+    }
+}

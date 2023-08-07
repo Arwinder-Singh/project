@@ -1,0 +1,47 @@
+{% extends "base.html "%} {% load static %} {% block content %}
+<h1>Dasboard</h1>
+
+<a href="/runModel"><button>Run model</button></a>
+<br>
+<br>
+<br>
+<div class="tables" style="display: flex; justify-content: space-around;">
+    <div>
+        <h1>table 1</h1>
+        <table>
+            <tr>
+                <th>itemset</th>
+                <th>support</th>
+            </tr>
+            {% for i,s in info %}
+            <tr>
+                <td>{{i}}</td>
+                <td>{{s}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div>
+        <h1>table 2</h1>
+        <table>
+            <tr>
+                <th>antecedents</th>
+                <th>consequents</th>
+                <th>lift</th>
+                <th>confidence</th>
+                <th>support</th>
+            </tr>
+            {% for a,c,s in table2 %}
+            <tr>
+                <td>{{a}}</td>
+                <td>{{c}}</td>
+                <td>{{s.lift}}</td>
+                <td>{{s.confidence}}</td>
+                <td>{{s.support}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

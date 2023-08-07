@@ -1,0 +1,54 @@
+{% extends "base.html "%} {% load static %} {% block content %}
+<section class="welcome-section ">
+    <div class="container">
+        <h1>Welcome to OrangeShop</h1>
+    </div>
+</section>
+
+<section class="about-section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h5 class="card-title">About Us</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ex nec velit bibendum efficitur. Aliquam auctor urna ut purus ultricies, vitae volutpat tortor scelerisque. Ut sed convallis mi.</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="product"><button class="btn btn-primary custom-btn">View Products</button></a>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/image1.svg" alt="About Us" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="dashboard-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/image2.svg" alt="Dashboard" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sign In to Dashboard</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed ex nec velit bibendum efficitur. Aliquam auctor urna ut purus ultricies, vitae volutpat tortor scelerisque. Ut sed convallis mi.</p>
+
+                        <a href="login"><button class="btn btn-primary" >Sign In</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
