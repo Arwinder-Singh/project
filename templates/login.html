@@ -1,11 +1,17 @@
-{% extends "base.html"%} {% load static %} {% block content %}
-    <h1>login</h1>
-    <br>
-    <a href="logout">logout</a>
-    <br>
-
-    <form action="" method="POST">
-        {% csrf_token %} {{form.as_p}}
-        <input type="submit" value="submit">
-    </form>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="form-card">
+        <h1 class="text-center">Login</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+            <p class="text-center mt-3">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+        </form>
+    </div>
+</div>
 {% endblock %}

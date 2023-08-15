@@ -1,41 +1,22 @@
 {% extends "base.html"%} {% load static %} {% block content %}
-    
-    <form action="" method="POST">
-        {% csrf_token %}
-        <br> {% for product in productList%}
-        
-        {% comment %} <input type="checkbox" class="btn-check" id="btn-check-outlined" id="{{product.productName}}" name="{{product.productName}}" value="{{product.productName}}" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btn-check-outlined">{{product.productName}}</label><br> {% endcomment %}
-
-
-         <input type="checkbox" id="{{product.productName}}" name="{{product.productName}}" value="{{product.productName}}">
-        <label for="{{product.productName}}">{{product.productName}}</label><br>
-         {% endfor %}
-
-        <input type="submit">
-    </form>
-
-
-
-
-{% comment %} <script>
-    var products = [];
-
-
-    document.getElementById("demo").innerHTML = products;
-
-    function add() {
-        var product = document.getElementById("product").value;
-        products.push(product);
-        document.getElementById("demo").innerHTML = products;
-    }
-
-    function remove() {
-
-        products.pop();
-        document.getElementById("demo").innerHTML = products;
-    }
-</script>
-
-</html> {% endcomment %}
+<div class="container-fluid py-4"> <!-- Add padding to the top of the content -->
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    {% for product in productList %}
+                        <div class="col-md-4 mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="{{ product.productName }}" name="{{ product.productName }}" value="{{ product.productName }}">
+                                <label class="form-check-label" for="{{ product.productName }}">{{ product.productName }}</label>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3 py-2">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
