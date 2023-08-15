@@ -188,9 +188,9 @@ body {
 /* Footer */
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/*    position:/ fixed;*/
+/*    bottom: 0;*/
+/*    width: 100%/;*/
     background-color: #ff7f50;
     padding: 20px;
     text-align: center;
@@ -269,36 +269,57 @@ body {
 }
 
 
-/* Login Section */
+/* Login and Signup Section */
 
-#login {
+#login, #signup {
     padding: 80px 0;
 }
 
-.card {
+.form-card {
     background-color: #ffe8db;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-.card-title {
+.form-card h1 {
+    color: #ff7f50;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin-bottom: 15px; 
 }
 
 .form-group label {
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .btn-primary {
     background-color: #ff7f50;
     border-color: #ff7f50;
+    margin-top: 20px;
 }
 
 .btn-primary:hover {
-    background-color: #e65c00;
-    border-color: #e65c00;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ff7f50;
+}
+
+.text-center mt-3 {
+    margin-top: 15px; 
 }
 
 
@@ -308,13 +329,13 @@ body {
     padding: 80px 0;
 }
 
-.card {
+.dashboard .card {
     background-color: #ffe8db;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-title {
+.dashboard .card-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
