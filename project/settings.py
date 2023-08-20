@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-_xj#ui!flk34k-#vi!dm#3&7+(k8yd*gl0l@^k0_@6&vmkmb@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ["orangeshop.pythonanywhere.com","127.0.0.1"]
+
 
 
 # Application definition
