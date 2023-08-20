@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_xj#ui!flk34k-#vi!dm#3&7+(k8yd*gl0l@^k0_@6&vmkmb@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["orangeshop.pythonanywhere.com"]
+ALLOWED_HOSTS = ["orangeshop.pythonanywhere.com","127.0.0.1"]
 
 
 # Application definition
@@ -117,15 +117,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT= os.path.join(BASE_DIR,'static/')
+# STATIC_URL = 'static/'
+# STATIC_ROOT= os.path.join(BASE_DIR,'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# STATIC_URL = 'static/'
-# STATICFILES_DIRS=[BASE_DIR/'static']
+STATIC_URL = 'static/'
+STATICFILES_DIRS=[BASE_DIR/'static']
 
 AUTH_USER_MODEL='home.User'

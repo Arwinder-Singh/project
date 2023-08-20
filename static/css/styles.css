@@ -188,9 +188,9 @@ body {
 /* Footer */
 
 .footer {
-/*    position:/ fixed;*/
-/*    bottom: 0;*/
-/*    width: 100%/;*/
+    /*    position:/ fixed;*/
+    /*    bottom: 0;*/
+    /*    width: 100%/;*/
     background-color: #ff7f50;
     padding: 20px;
     text-align: center;
@@ -271,7 +271,8 @@ body {
 
 /* Login and Signup Section */
 
-#login, #signup {
+#login,
+#signup {
     padding: 80px 0;
 }
 
@@ -298,7 +299,7 @@ body {
 }
 
 .form-control {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .form-group label {
@@ -319,7 +320,7 @@ body {
 }
 
 .text-center mt-3 {
-    margin-top: 15px; 
+    margin-top: 15px;
 }
 
 
